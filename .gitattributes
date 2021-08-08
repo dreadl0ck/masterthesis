@@ -1,0 +1,2 @@
+dnn/v1/screenlog.0 filter=lfs diff=lfs merge=lfs -text
+dnn/v2/screenlog.0 filter=lfs diff=lfs merge=lfs -text

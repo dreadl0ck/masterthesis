@@ -1,0 +1,12 @@
+$ du -sch *.pcapng
+50G	Friday-02-03-2018.pcapng
+21G	Friday-16-02-2018.pcapng
+53G	Friday-23-02-2018.pcapng
+59G	Thursday-01-03-2018.pcapng
+7.3G	Thursday-15-02-2018.pcapng
+56G	Thursday-22-02-2018.pcapng
+43G	Tuesday-20-02-2018.pcapng
+13G	Wednesday-14-02-2018.pcapng
+78G	Wednesday-21-02-2018.pcapng
+59G	Wednesday-28-02-2018.pcapng
+436G	total
