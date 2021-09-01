@@ -1,4 +1,4 @@
-v12
+v2
 
 - zscoring categoricals after encoding
 - shuffling enabled on all runs
