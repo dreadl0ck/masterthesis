@@ -10,3 +10,17 @@ $ du -sch *.pcapng
 78G	Wednesday-21-02-2018.pcapng
 59G	Wednesday-28-02-2018.pcapng
 436G	total
+
+$ du -h all/Connection.csv   
+7.1G    all/Connection.csv
+                                                                                                                                                                                                                                            
+$ wc -l all/Connection.csv
+39850472 all/Connection.csv
+
+                                                                                                                                                                                                                                            
+$ zip all/Connection.csv.zip all/Connection.csv
+  adding: all/Connection.csv (deflated 74%)
+$ du -h all/Connection.csv.zip 
+1.9G    all/Connection.csv.zip
+
+
