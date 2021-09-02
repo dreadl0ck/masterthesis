@@ -3,7 +3,13 @@
 This repository contains executions logs and scripts to reproduce the experiments from our masterthesis _"Good || Evil: Defending Infrastructure at Scale with Anomaly and Classification Based Network Intrusion Detection"_
 
 - Link to paper: https://rp.os3.nl/2020-2021/p75/report.pdf
-- Presentation: https://rp.os3.nl/2020-2021/p75/presentation.pdf
+- Presentation (slightly outdated, TODO update): https://rp.os3.nl/2020-2021/p75/presentation.pdf
+
+### TODOs
+
+- update presentation slides 
+- add CSV dataset files to git lfs
+- add detailed step by step docs for experiment reproduction
 
 ## Structure
 
@@ -14,6 +20,8 @@ Each one has a folder that contains the model from the last execution, as well a
 The core experiment logic is in _dnn/v1/experiment1.sh_ and _dnn/v1/experiment2.sh_ respectively.
 
 The _screenlog.0_ file contains the raw output from the experiment script execution, the file _v1.csv_ and _v2.csv_ files contain a generated spreadsheet for human analysis.
+
+Step by step instructions are located in _dnn/README.md_.
 
 ## CIC IDS 2018 Attack Descriptions
 
@@ -34,12 +42,24 @@ Please make sure to use at least netcap version _v0.6.0_ for the reproduction of
 The pcaps for the CIC IDS 2018 dataset are provided for each day, as individual capture files per host.
 We merged these into a single pcap file for each day of the dataset.
 
-After merging we noticed that some captures contained traffic from multiple days, and there decided to clean them to ensure each file would only contain traffic for the desired day.
+After merging we noticed that some merged capture files contained traffic from multiple days, and therefore decided to clean them to ensure each file would only contain traffic for the desired day.
 The _dnn/clean-days.sh_ script is used for this purpose.
 
 ## Extract generated plots
 
 The experiment code will generate several plots, to extract them all into a single directory the _dnn/extract-plots.sh_ script can be used.
+
+## Experiments on Netflow data from the dataset authors
+
+> TODO: add step by step guide
+ 
+Download and install anomaly tool: https://github.com/ppartarr/anomaly 
+
+Experiment scripts:
+
+- runAudit.sh
+- runExperiments.sh
+- runNetflow.sh
 
 ## LFS
 
@@ -54,8 +74,3 @@ To install the git lfs extension, use:
 Afterwards just clone the repository as usual:
 
     git clone git@github.com:dreadl0ck/masterthesis.git
-
-## TODO
-
-- add dataset files to git lfs
-- add docs for experiment reproduction, and cleanup all readme files accross the repo
